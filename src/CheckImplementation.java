@@ -1,4 +1,5 @@
 import chap2_numerical_algorithms.gcd.GCD;
+import chap2_numerical_algorithms.primes.PrimeFactors;
 import chap2_numerical_algorithms.pseudo_random.ArrayRandomizer;
 import chap2_numerical_algorithms.pseudo_random.LinearCongruentialGenerator;
 
@@ -8,7 +9,7 @@ import chap2_numerical_algorithms.pseudo_random.LinearCongruentialGenerator;
 public class CheckImplementation {
 
     public static void main(String[] args) {
-        checkGcdCalculation();
+        checkPrimeFactors();
     }
 
     /**
@@ -66,6 +67,13 @@ public class CheckImplementation {
      */
     private static void checkGcdCalculation() {
         System.out.println(GCD.getGcd(4851, 3003));
+    }
+
+    /**
+     * print to check prime factors
+     */
+    private static void checkPrimeFactors() {
+        System.out.println(PrimeFactors.findPrimeFactors(4851));
     }
 
 }
