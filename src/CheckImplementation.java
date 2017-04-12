@@ -1,3 +1,4 @@
+import chap2_numerical_algorithms.gcd.GCD;
 import chap2_numerical_algorithms.pseudo_random.ArrayRandomizer;
 import chap2_numerical_algorithms.pseudo_random.LinearCongruentialGenerator;
 
@@ -7,7 +8,7 @@ import chap2_numerical_algorithms.pseudo_random.LinearCongruentialGenerator;
 public class CheckImplementation {
 
     public static void main(String[] args) {
-        checkRandomizationOnArray();
+        checkGcdCalculation();
     }
 
     /**
@@ -58,6 +59,13 @@ public class CheckImplementation {
             System.out.print(" ");
         }
 
+    }
+
+    /**
+     * print to check GCD calculation
+     */
+    private static void checkGcdCalculation() {
+        System.out.println(GCD.getGcd(4851, 3003));
     }
 
 }
